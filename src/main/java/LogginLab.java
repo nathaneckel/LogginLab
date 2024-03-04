@@ -1,6 +1,6 @@
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
+// Copied LogginLabTest into NewTest and will improve later. **Write a test for the method in the Test class.
 public class LogginLab {
     private final static Logger logger = Logger.getLogger(LogginLab.class.getName());
 
@@ -15,9 +15,7 @@ public class LogginLab {
         logger.log(Level.INFO, "Hello World!");
         logger.log(Level.SEVERE, "Terrible Error!");
         logger.log(Level.WARNING, "Not So Bad Error!");
-
         logger.log(Level.INFO, "****\n\tAt ZipCode, \n\twe don't use System.out.Println \n\tuntil we've earned the right.\n****");
-
     }
 
     public Integer getThreshold() {
@@ -34,8 +32,12 @@ public class LogginLab {
         else
             return false;
     }
+    // OK - Write a method called thresholdReached, returns true if argument 'limit' is over the threshold.
+    public boolean thresholdReached(Integer limit) {
+        if (limit > this.threshold)
+            return true;
+        else
+            return false;
+    }
 
-    // Write a method called thresholdReached, returns true if argument 'limit' is over the threshold.
-    // use thresholdExceeds for a pattern.
-    // Write a test for the method in the Test class.
 }
