@@ -53,4 +53,5 @@ public class LogginLab {
 (ALWAYS write a test for a method. Create Method, create TEST).
 - CONFIGURE to output messages to a file console or other output stream
 - EXCEPTIONS - to identify cause of errors
+[Title vs lowerclass]
  */
